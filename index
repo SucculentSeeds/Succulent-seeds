@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+        <p>Welcome to my public website hosted entirely on GitHub Pages.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>Write a brief, engaging introduction about who you are, your skills, and what you are passionate about. This is your digital billboard!</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section gray-bg">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A brief description of a cool project you built.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Another amazing project showcasing your unique technical skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email or find me on social media.</p>
+        <p>📧 email@example.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Your Name. Powered by GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
