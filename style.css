@@ -1,176 +1,202 @@
+/* Premium Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 body {
-    color: #333;
-    line-height: 1.6;
-    background-color: #fafafa;
+    color: #2c3e2b;
+    line-height: 1.7;
+    background-color: #fcfbfa; /* Warm minimalist off-white */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Premium Navigation Bar */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 25px 8%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(46, 77, 45, 0.04);
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
 header .logo {
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: #2e7d32; /* Plant Green Theme */
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #1b4d22;
+    letter-spacing: -0.5px;
 }
 
 nav a {
-    margin-left: 20px;
+    margin-left: 30px;
     text-decoration: none;
-    color: #666;
-    font-weight: 500;
-    transition: color 0.2s;
+    color: #556b54;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
 }
 
 nav a:hover {
-    color: #2e7d32;
+    color: #1b4d22;
 }
 
+/* Clean & Rich Hero Section */
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 50vh;
-    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    height: 55vh;
+    background: linear-gradient(135deg, #f0f4ee 0%, #e1ebd9 100%);
     padding: 0 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #1b5e20;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #0b2f11;
+    letter-spacing: -1px;
 }
 
 .hero .highlight {
-    color: #2e7d32;
+    color: #2d7a3a;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    color: #4c5e4d;
-    margin-bottom: 25px;
+    font-size: 1.3rem;
+    color: #4a614c;
+    margin-bottom: 35px;
+    max-width: 600px;
 }
 
+/* Modern Button UI */
 .btn {
-    background: #2e7d32;
-    color: white;
-    padding: 12px 30px;
+    background: #1b4d22;
+    color: #ffffff;
+    padding: 14px 36px;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.2s;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(27, 77, 34, 0.2);
+    transition: all 0.25s ease;
 }
 
 .btn:hover {
-    background: #1b5e20;
+    background: #2d7a3a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(27, 77, 34, 0.3);
 }
 
+/* Structural Page Containers */
 .content-section {
-    padding: 60px 10%;
+    padding: 80px 8%;
     text-align: center;
-    flex: 1;
 }
 
 .page-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-    text-align: left;
 }
 
 .page-container h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    color: #1b5e20;
-    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #0b2f11;
+    letter-spacing: -0.5px;
 }
 
-.about-text {
-    font-size: 1.1rem;
-    text-align: justify;
-    color: #444;
-}
-
-.contact-box {
-    margin-top: 20px;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    display: inline-block;
-}
-
-.gray-bg {
-    background-color: #f1f8e9;
-}
-
+/* Store Front-End Card Layout Update */
 .project-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 35px;
+    margin-top: 45px;
 }
 
 .project-card {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    width: 300px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(46, 77, 45, 0.06);
     text-align: left;
+    transition: all 0.3s ease;
 }
 
-.project-card h3 {
-    margin-bottom: 10px;
-    color: #2e7d32;
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(46, 77, 45, 0.08);
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    margin-top: auto;
+/* Image Showcase Containers */
+.product-img-box {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background-color: #eaeaea;
 }
-/* Contact Page Specific UI Grid */
+
+.product-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .product-img-box img {
+    transform: scale(1.08);
+}
+
+.card-details {
+    padding: 25px;
+}
+
+.card-details h3 {
+    font-size: 1.35rem;
+    color: #0b2f11;
+    margin-bottom: 8px;
+}
+
+.price-tag {
+    font-weight: 700;
+    color: #2d7a3a;
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+/* Modernized Contact Module Blocks */
 .contact-grid {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 .contact-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-    width: 340px;
+    background: #ffffff;
+    padding: 45px 35px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    width: 380px;
     text-align: center;
-    border: 1px solid #e8f5e9;
-    transition: transform 0.2s;
+    border: 1px solid rgba(46, 77, 45, 0.05);
+    transition: all 0.3s ease;
 }
 
 .contact-card:hover {
@@ -178,63 +204,38 @@ footer {
 }
 
 .contact-icon {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-
-.contact-card h3 {
-    color: #1b5e20;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-}
-
-.contact-detail {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 8px;
-}
-
-.contact-subtext {
-    font-size: 0.9rem;
-    color: #888;
-}
-
-/* Social Media Section UI */
-.socials-section {
-    text-align: center;
-    margin-top: 60px;
-    padding-top: 40px;
-    border-top: 1px solid #e0e0e0;
-}
-
-.socials-section h3 {
-    color: #1b5e20;
+    font-size: 3rem;
     margin-bottom: 20px;
+}
+
+/* Sleek Capsule Social Links */
+.socials-section {
+    margin-top: 80px;
+    padding-top: 50px;
+    border-top: 1px solid #eef2ed;
 }
 
 .socials-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
+    margin-top: 25px;
 }
 
 .social-btn {
-    padding: 10px 25px;
+    padding: 12px 30px;
     text-decoration: none;
     color: white;
-    border-radius: 25px;
+    border-radius: 40px;
     font-weight: 600;
-    font-size: 0.9rem;
-    transition: background 0.2s;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
 }
 
-.instagram { background: #e1306c; }
-.instagram:hover { background: #b82354; }
-
-.tiktok { background: #000000; }
-.tiktok:hover { background: #333333; }
-
-.twitter { background: #1da1f2; }
-.twitter:hover { background: #0d8bd9; }
+.instagram { background: #121212; }
+.instagram:hover { background: #e1306c; }
+.tiktok { background: #121212; }
+.tiktok:hover { background: #25f4ee; color: #000; }
+.twitter { background: #121212; }
+.twitter:hover { background: #1da1f2; }
