@@ -153,3 +153,88 @@ footer {
     font-size: 0.9rem;
     margin-top: auto;
 }
+/* Contact Page Specific UI Grid */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    width: 340px;
+    text-align: center;
+    border: 1px solid #e8f5e9;
+    transition: transform 0.2s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: #1b5e20;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.contact-detail {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.contact-subtext {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Social Media Section UI */
+.socials-section {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.socials-section h3 {
+    color: #1b5e20;
+    margin-bottom: 20px;
+}
+
+.socials-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.instagram { background: #e1306c; }
+.instagram:hover { background: #b82354; }
+
+.tiktok { background: #000000; }
+.tiktok:hover { background: #333333; }
+
+.twitter { background: #1da1f2; }
+.twitter:hover { background: #0d8bd9; }
