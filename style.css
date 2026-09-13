@@ -1,4 +1,3 @@
-/* General Styling reset */
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +9,11 @@ body {
     color: #333;
     line-height: 1.6;
     background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Header & Nav */
 header {
     display: flex;
     justify-content: space-between;
@@ -27,8 +28,8 @@ header {
 
 header .logo {
     font-weight: bold;
-    font-size: 1.3rem;
-    color: #0070f3;
+    font-size: 1.4rem;
+    color: #2e7d32; /* Plant Green Theme */
 }
 
 nav a {
@@ -40,40 +41,40 @@ nav a {
 }
 
 nav a:hover {
-    color: #0070f3;
+    color: #2e7d32;
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 60vh;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    height: 50vh;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
     padding: 0 20px;
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+    color: #1b5e20;
 }
 
 .hero .highlight {
-    color: #0070f3;
+    color: #2e7d32;
 }
 
 .hero p {
     font-size: 1.2rem;
-    color: #555;
+    color: #4c5e4d;
     margin-bottom: 25px;
 }
 
 .btn {
-    background: #0070f3;
+    background: #2e7d32;
     color: white;
-    padding: 10px 25px;
+    padding: 12px 30px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -81,26 +82,47 @@ nav a:hover {
 }
 
 .btn:hover {
-    background: #0051b3;
+    background: #1b5e20;
 }
 
-/* Content Sections */
 .content-section {
-    padding: 80px 10%;
+    padding: 60px 10%;
+    text-align: center;
+    flex: 1;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.page-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #1b5e20;
     text-align: center;
 }
 
-.content-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    position: relative;
+.about-text {
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #444;
+}
+
+.contact-box {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    display: inline-block;
 }
 
 .gray-bg {
-    background-color: #f0f4f8;
+    background-color: #f1f8e9;
 }
 
-/* Project Grid */
 .project-grid {
     display: flex;
     justify-content: center;
@@ -120,14 +142,14 @@ nav a:hover {
 
 .project-card h3 {
     margin-bottom: 10px;
-    color: #0070f3;
+    color: #2e7d32;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
+    margin-top: auto;
 }
